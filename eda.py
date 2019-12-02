@@ -6,7 +6,7 @@ import seaborn as sns
 from matplotlib import rcParams
 rcParams.update({'figure.autolayout': True})
 
-df = pd.read_csv('C:/Users/niles/Desktop/DSR_BDA Project/googleplaystore.csv')
+df = pd.read_csv('<PATH>/googleplaystore.csv')
 
 print('Different types of App Categories as present in the dataset are: ')
 print('--------------------------------------------------------------------')
