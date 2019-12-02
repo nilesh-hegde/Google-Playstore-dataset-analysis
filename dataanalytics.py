@@ -21,7 +21,7 @@ plt.title('Number of Paid apps on the basis of category')
 sns.countplot(x='Category',data = df)
 plt.xticks(rotation=90)
 #plt.show()
-plt.savefig("C:/Users/niles/Desktop/DSR_BDA Project/im1.png")
+plt.savefig("<PATH>/im1.png")
 
 query = {"Type":"Free"}
 df = pd.DataFrame(db.testcollection.find(query))
@@ -31,7 +31,7 @@ plt.title('Number of Free apps on the basis of category')
 sns.countplot(x='Category',data = df)
 plt.xticks(rotation=90)
 #plt.show()
-plt.savefig("C:/Users/niles/Desktop/DSR_BDA Project/im2.png")
+plt.savefig("<PATH>/im2.png")
 
 
 #Query2:Number of apps having rating less than 3.0 in each Genre
@@ -45,7 +45,7 @@ plt.title('Number of apps of Rating <3.0 Genre wise')
 sns.countplot(x='Genres',data = df)
 plt.xticks(rotation=90)
 #plt.show()
-plt.savefig("C:/Users/niles/Desktop/DSR_BDA Project/im3.png")
+plt.savefig("<PATH>/im3.png")
 
 
 #Query 3:Scatterplot of category v/s reviews for Teens
@@ -62,7 +62,7 @@ sns.scatterplot(x='Category',y='Reviews',data = df,hue='Category',legend=False)
 plt.xticks(rotation=90)
 plt.title('Category V/S Reviews for Apps Developed for teens')
 #plt.show()
-plt.savefig("C:/Users/niles/Desktop/DSR_BDA Project/im4.png")
+plt.savefig("<PATH>/im4.png")
 
 
 #Query 4:Pie chart for paid and free tool apps
@@ -82,7 +82,7 @@ plt.pie(sizes, labels=labels,
 autopct='%1.1f%%', startangle=380,colors=colors,explode=explode)
 plt.axis('equal')
 #plt.show()
-plt.savefig("C:/Users/niles/Desktop/DSR_BDA Project/im5.png")
+plt.savefig("<PATH>/im5.png")
 
 
 #Query 5:Bar graph to show competitors in a Category
@@ -95,7 +95,7 @@ sns.barplot(y='Installs',x='App',hue='App',data=df)
 plt.legend().set_visible(False)
 plt.title('Top Competitors based on Installs in Shopping Category')
 plt.xticks(rotation=90)
-plt.savefig("C:/Users/niles/Desktop/DSR_BDA Project/im6.png")
+plt.savefig("<PATH>/im6.png")
 
 
 #Query 6: To show paid apps have better ratings
@@ -109,4 +109,4 @@ plt.figure(figsize=(8,8))
 sns.boxplot(x='Type',y='Rating',data = df)
 plt.xticks(rotation=90)
 plt.title('Comparison of Rating of Paid and Free Apps')
-plt.savefig("C:/Users/niles/Desktop/DSR_BDA Project/im7.png")
+plt.savefig("<PATH>/im7.png")
