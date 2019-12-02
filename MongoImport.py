@@ -4,7 +4,7 @@ import pandas as pd
 import sys, getopt, pprint
 from pymongo import MongoClient
 #CSV to JSON Conversion
-csvfile = open('C:/Users/niles/Desktop/DSR_BDA Project/clean_data.csv', 'r', encoding="utf-8")
+csvfile = open('<PATH>/clean_data.csv', 'r', encoding="utf-8")
 reader = csv.DictReader( csvfile )
 mongo_client=MongoClient()
 db=mongo_client.testdb
